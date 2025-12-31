@@ -101,7 +101,7 @@ Internally, `POST /api/collections` uses a prepared `INSERT` statement and `GET 
 SELECT * FROM collections;
 ```
 
-## 🔝 Top / useful queries
+##  Top / useful queries
 
 The app currently issues `SELECT * FROM collections` to get all rows. For interactive inspection in `cqlsh`:
 
