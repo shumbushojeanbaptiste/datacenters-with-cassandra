@@ -2,7 +2,7 @@
 
 A small Node.js backend that stores coffee collections in Cassandra and exposes simple HTTP endpoints to create and list collections.
 
-## 📁 Project structure
+##  Project structure
 
 - `backend/`
   - `app.js` — Express server and routes
@@ -10,7 +10,7 @@ A small Node.js backend that stores coffee collections in Cassandra and exposes 
   - `controllers/collectionController.js` — CQL queries (insert & select)
   - `models/cassandraClient.js` — Cassandra client configuration
 
-## 🚀 Quickstart
+##  Quickstart
 
 Prerequisites:
 - Node.js (16+ recommended)
@@ -141,7 +141,7 @@ CREATE TABLE totals_by_farmer (
 -- Increment total_weight from application code when inserting collections
 ```
 
-## ⚠️ Troubleshooting & tips
+## Troubleshooting & tips
 
 - Connection issues: if the backend runs inside a container or another machine, adjust `contactPoints` in `backend/models/cassandraClient.js` to the Cassandra node's reachable IP.
 - If you're using Docker Compose or multiple nodes, set `localDataCenter` appropriately and use multiple contact points.
@@ -154,7 +154,7 @@ CREATE TABLE totals_by_farmer (
 }
 ```
 
-## 📌 Files to inspect for query behavior
+##  Files to inspect for query behavior
 
 - `backend/models/cassandraClient.js` — client config (contact points, data center, keyspace)
 - `backend/controllers/collectionController.js` — insert and select logic
@@ -180,4 +180,4 @@ if friendly with mysql, note that cassandra does not support joins between table
 
 
 
-If you want, I can also add a `start` script to `backend/package.json` and include a short seed script to populate sample data for testing. ✅
+If you want, I can also add a `start` script to `backend/package.json` and include a short seed script to populate sample data for testing. 
