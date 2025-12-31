@@ -162,4 +162,22 @@ CREATE TABLE totals_by_farmer (
 
 ---
 
+other tips for cassandra basic querys and usage can be found in the [Cassandra documentation](https://cassandra.apache.org/doc/latest/).
+
+cqlsh: cassandra query language shell reference [here](https://cassandra.apache.org/doc/latest/cql/).
+to show keyspaces: `DESCRIBE KEYSPACES;`
+to show tables in a keyspace: `DESCRIBE TABLES;`
+to show table schema: `DESCRIBE TABLE <table_name>;`
+to exit cqlsh: `EXIT;` or `QUIT;`
+to see help in cqlsh: `HELP;` or `?;`
+to clear the screen in cqlsh: `CLS;` (Windows) or `CLEAR;` (Linux/Mac)
+to see current keyspace: `SHOW KEYSPACE;`
+to change keyspace: `USE <keyspace_name>;`
+row limit: `SELECT * FROM <table_name> LIMIT <number>;`
+to count rows: `SELECT COUNT(*) FROM <table_name>;`
+
+if friendly with mysql, note that cassandra does not support joins between tables like mysql does. instead, data should be modeled to fit query patterns.
+
+
+
 If you want, I can also add a `start` script to `backend/package.json` and include a short seed script to populate sample data for testing. ✅
